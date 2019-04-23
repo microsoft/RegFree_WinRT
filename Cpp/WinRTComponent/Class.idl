@@ -1,0 +1,10 @@
+namespace WinRTComponent
+{
+    [default_interface]
+    runtimeclass Class
+    {
+        Class();
+        String MyProperty;
+		String MyProperty2;
+    }
+}
