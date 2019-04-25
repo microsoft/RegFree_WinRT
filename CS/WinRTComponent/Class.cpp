@@ -4,26 +4,23 @@
 
 namespace winrt::WinRTComponent::implementation
 {
+	hstring componentString = L"Hello from an Non-Packaged WinRT Component! :D";
+
 	hstring Class::MyProperty()
 	{
-		return L"Hello from an UNPACKAGED WinRT Component! :D";
-
-
+		return componentString;
 	}
 
 	void Class::MyProperty(hstring /* value */)
-	{
-		// throw hresult_not_implemented();
+	{	
 	}
 
 	hstring Class::MyProperty2()
 	{
-		return L"Hello from an UNPACKAGED WinRT Component! :D";
-
+		return componentString;
 	}
 
 	void Class::MyProperty2(hstring /* value */)
-	{
-		// throw hresult_not_implemented();
+	{	
 	}
 }

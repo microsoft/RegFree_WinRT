@@ -1,4 +1,4 @@
-# Registration-free WinRT in C++ Desktop App sample
+# Registration-free WinRT in C++ Desktop App Sample
 
 This sample demonstrates how to use [Registration-free WinRT](https://aka.ms/regfreewinrtblog) a new feature in Windows Builds 18309+ to reference a C++ Windows Runtime component in a non-packaged C++ desktop app. It contains a C++ desktop app (CppDesktopApp.vcxproj) and a WinRT Component (WinRTComponent.vcxproj).
 
@@ -8,7 +8,7 @@ The C++ desktop app uses:
 [C++/WinRT](https://github.com/Microsoft/xlang/blob/f1309fe42d929d612aa9b66557d9a22769067b3f/src/package/cppwinrt/nuget/readme.md) to create projection header files of the component for use in the app code
 [Microsoft.VCRTForwarders.140](https://github.com/Microsoft/vcrt-forwarders) NuGet package to manage C++ Runtime dependencies for the component.
 
-##Requirements
+## Requirements
 
 The sample requires Windows Build 18309+ to work
 
@@ -18,10 +18,22 @@ The sample requires Windows Build 18309+ to work
 
 A non-packaged C# WinForms app referencing a C++ WinRT Component
 
-* The specific DLLs and classes (from the WinRT component) being referenced should be declared in the Win32 Application manifest - CppDesktopApp.exe.manifest.
+* The specific DLLs and classes (from the WinRT component) being referenced should be declared in the [Win32 Application manifest](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/application-manifests) - CppDesktopApp.exe.manifest.
 (To add a new Win32 Application Manifest to a desktop app right click on project -> Add -> New Item -> Utility -> Text File -> Name it <yourappname.exe>.manifest)
-* In order for the System to pick up themcomponent DLLs specified in the application manifest at runtime, the DLLs must be located in the same deirectory as the app's .exe. This project is using a propery sheet (PropertySheet.props) to copy over the component DLL to the app's outpiut directory. 
-The property sheet is also used to add a reference to the component's WinMD to enable [C++/WinRT](https://github.com/Microsoft/xlang/tree/master/src/package/cppwinrt/nuget) to generate projection headers of the component which are used in the app code.
+
+* In order for the System to pick up the component DLLs specified in the application manifest at runtime, the DLLs must be located in the same deirectory as the app's .exe. This project is using a propery sheet (PropertySheet.props) to copy over the component DLL to the app's output directory. 
+
+* The property sheet is also used to add a reference to the component's WinMD to enable [C++/WinRT](https://github.com/Microsoft/xlang/tree/master/src/package/cppwinrt/nuget) to generate projection headers of the component which are used in the app code.
+
+* To add your own property sheet to a C++ project:
+    * right-click the project node
+    * select Add | New Item... | Visual C++ | Property Sheets | Property Sheet (.props) 
+    * edit the resulting property sheet file
+    * add the necessary project customizations
+    * select View | Other Windows | Property Manager
+    * right-click the project node
+    * select Add Existing Property Sheet...
+    * select the newly created property sheet file
 
 ### WinRTComponent
 

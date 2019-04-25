@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-//using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,8 +19,8 @@ namespace WinFormsApp
         private void Button1_Click(object sender, EventArgs e)
         {
 
-            WinRTComponent.Class c1 = new WinRTComponent.Class();
-            String textFromComponent = c1.MyProperty.ToString();
+            WinRTComponent.Class winRTClass = new WinRTComponent.Class();
+            String textFromComponent = winRTClass.MyProperty.ToString();
             TextBox1.Text = textFromComponent;
 
             var popup = new Popup(textFromComponent);
