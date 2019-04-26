@@ -5,7 +5,7 @@ This sample demonstrates how to use [Registration-free WinRT](https://aka.ms/reg
 You can learn more about Registration-free WinRT [here](https://aka.ms/regfreewinrtblog).
 
 The C# desktop app uses:
-[Microsoft.VCRTForwarders.140](https://github.com/Microsoft/vcrt-forwarders) NuGet package to manage C++ Runtime dependencies for the C++ component.
+[Microsoft.VCRTForwarders.140](https://aka.ms/vcrtfwdnuget) NuGet package to manage C++ Runtime dependencies for the C++ component. The GitHub repo can be found [here](https://aka.ms/vcrtfwdgit).
 
 ## Requirements
 
@@ -35,7 +35,7 @@ copy /Y "$(SolutionDir)WinRTComponent\bin\$(Platform)\$(Configuration)\WinRTComp
 A simple C++ WinRT Component with a class returning a string
 
 * The component is written using [C++/WinRT](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt) instead of [C++/CX](https://docs.microsoft.com/en-us/cpp/cppcx/visual-c-language-reference-c-cx?view=vs-2017) therefore it requires an installed Nuget Package: [Microsoft.Windows.CppWinRT](https://www.nuget.org/packages/Microsoft.Windows.CppWinRT/).
-* To manage the specific C++ Runtime Dependencies of the WinRT component, the app is using the [Microsoft.VCRTForwarders.140](https://github.com/Microsoft/vcrt-forwarders) NuGet package.
+* To manage the specific C++ Runtime Dependencies of the WinRT component, the app is using the [Microsoft.VCRTForwarders.140](https://aka.ms/vcrtfwdnuget) NuGet package.
 
 ### Building and running the sample
 

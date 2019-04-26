@@ -6,7 +6,7 @@ You can learn more about Registration-free WinRT [here](https://aka.ms/regfreewi
 
 The C++ desktop app uses:
 [C++/WinRT](https://github.com/Microsoft/xlang/blob/f1309fe42d929d612aa9b66557d9a22769067b3f/src/package/cppwinrt/nuget/readme.md) to create projection header files of the component for use in the app code
-[Microsoft.VCRTForwarders.140](https://github.com/Microsoft/vcrt-forwarders) NuGet package to manage C++ Runtime dependencies for the component.
+[Microsoft.VCRTForwarders.140](https://aka.ms/vcrtfwdnuget) NuGet package to manage C++ Runtime dependencies for the component. The GitHub repo can be found [here](https://aka.ms/vcrtfwdgit).
 
 ## Requirements
 
@@ -40,7 +40,7 @@ A non-packaged C# WinForms app referencing a C++ WinRT Component
 A simple C++ WinRT Component with a class returning a string
 
 * The component is written using [C++/WinRT](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt) instead of [C++/CX](https://docs.microsoft.com/en-us/cpp/cppcx/visual-c-language-reference-c-cx?view=vs-2017) therefore it requires an installed Nuget Package: [Microsoft.Windows.CppWinRT](https://www.nuget.org/packages/Microsoft.Windows.CppWinRT/).
-* To manage the specific C++ Runtime Dependencies of the WinRT component, the app is using the [Microsoft.VCRTForwarders.140](https://github.com/Microsoft/vcrt-forwarders) NuGet package.
+* To manage the specific C++ Runtime Dependencies of the WinRT component, the app is using the [Microsoft.VCRTForwarders.140](https://aka.ms/vcrtfwdnuget) NuGet package.
 
 ### Building and running the sample
 
