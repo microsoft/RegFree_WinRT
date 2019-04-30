@@ -5,6 +5,6 @@ namespace WinRTComponent
     {
         Class();
         String MyProperty;
-		String MyProperty2;
+        String MyProperty2;
     }
 }

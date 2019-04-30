@@ -7,8 +7,8 @@ using namespace WinRTComponent;
 
 int __stdcall wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)
 {
-	Class winrtComponentClass;
+    Class winrtComponentClass;
 
-	init_apartment(apartment_type::single_threaded);
+    init_apartment(apartment_type::single_threaded);
     ::MessageBoxW(::GetDesktopWindow(), winrtComponentClass.MyProperty().c_str(), L"Desktop App + WinRT Component", MB_OK);
 }

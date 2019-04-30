@@ -8,11 +8,11 @@ namespace winrt::WinRTComponent::implementation
     {
         Class() = default;
 
-		hstring MyProperty();
-		hstring MyProperty2();
+        hstring MyProperty();
+        hstring MyProperty2();
 
-		void MyProperty(hstring value);
-		void MyProperty2(hstring value);
+        void MyProperty(hstring value);
+        void MyProperty2(hstring value);
     };
 }
 
