@@ -17,9 +17,9 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|ARM">
+    <ProjectConfiguration Include="Debug|ARM64">
       <Configuration>Debug</Configuration>
-      <Platform>ARM</Platform>
+      <Platform>ARM64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -29,9 +29,9 @@
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|ARM">
+    <ProjectConfiguration Include="Release|ARM64">
       <Configuration>Release</Configuration>
-      <Platform>ARM</Platform>
+      <Platform>ARM64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
@@ -68,7 +68,7 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <OutDir>$(SolutionDir)$(MSBuildProjectName)\bin\$(PlatformShortName)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -77,7 +77,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)$(MSBuildProjectName)\bin\$(PlatformShortName)\$(Configuration)\</OutDir>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <OutDir>$(SolutionDir)$(MSBuildProjectName)\bin\$(PlatformShortName)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
